@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESTIFY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Adoption</h1>
+        <p>Connecting loving families with children in need of a home</p>
+    </header>
+
+    <section id="search">
+        <h2>Find a Child</h2>
+        <label for="age">Age: </label>
+        <select id="age">
+            <option value="">All</option>
+            <option value="0-5">0-5</option>
+            <option value="6-10">6-10</option>
+            <option value="11-15">11-15</option>
+            <option value="16-18">16-18</option>
+        </select>
+
+        <label for="gender">Gender: </label>
+        <select id="gender">
+            <option value="">All</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        
+        <button id="searchBtn">Search</button>
+    </section>
+
+    <section id="profiles">
+        <h2>Available Profiles</h2>
+        <div class="profile-card" data-age="8" data-gender="male">
+            <h3>John Doe</h3>
+            <p>Age: 8</p>
+            <p>Gender: Male</p>
+            <p>Background: Friendly and loves sports.</p>
+        </div>
+        <div class="profile-card" data-age="10" data-gender="female">
+            <h3>Jane Smith</h3>
+            <p>Age: 10</p>
+            <p>Gender: Female</p>
+            <p>Background: Artistic and loves drawing.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
